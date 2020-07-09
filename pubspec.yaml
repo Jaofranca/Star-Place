@@ -1,4 +1,4 @@
-name: teste
+name: Starplace
 description: A new Flutter project.
 version: 1.0.0+1
 
@@ -12,6 +12,7 @@ dependencies:
   audioplayers: ^0.15.1
   material_design_icons_flutter: ^3.2.3895
   url_launcher: ^5.4.10
+  google_fonts: ^1.1.0
 
 
 dev_dependencies:
@@ -25,7 +26,14 @@ flutter:
   assets:
     - images/
     - images/background/
+    - images/prequels/
+    - images/classic/
+    - images/sequels/
+    - images/gifs/
     - assets/
+    - assets/prequels/
+    - assets/classic/
+    - assets/sequels/
   fonts:
     - family: Starjedi
       fonts:
@@ -35,5 +43,9 @@ flutter:
       - asset: fonts/Pacifico-Regular.ttf
     - family: Source Sans Pro
       fonts:
-      - asset: fonts/SourceSansPro-Regular.ttf    
+      - asset: fonts/SourceSansPro-Regular.ttf
+    - family : Nexa
+      fonts:
+      - asset: fonts/Nexa-Regular.ttf
+      - asset: fonts/Nexa-Bold.ttf    
  

@@ -1,9 +1,7 @@
-import 'main.dart';
-import 'Aboutme.dart';
-import 'starmusic.dart';
-import 'starbuttons.dart';
 import 'package:flutter/material.dart';
 
+enum Pages { home, starbuttons, starmusic, aboutme }
+Pages actualPage = Pages.home;
 drawerGeral(contexto) {
   return Drawer(
     child: ListView(
@@ -24,11 +22,8 @@ drawerGeral(contexto) {
             style: TextStyle(fontSize: 20),
           ),
           onTap: () {
-            Navigator.push(
-                contexto,
-                MaterialPageRoute(
-                  builder: (context) => Myhome(),
-                ));
+            Navigator.pushNamed(contexto, '/');
+            actualPage = Pages.home;
           },
         ),
         ListTile(
@@ -37,12 +32,8 @@ drawerGeral(contexto) {
             style: TextStyle(fontSize: 20),
           ),
           onTap: () {
-            Navigator.push(
-              contexto,
-              MaterialPageRoute(
-                builder: (context) => StarButtons(),
-              ),
-            );
+            Navigator.pushNamed(contexto, '/starbutton');
+            actualPage = Pages.starbuttons;
           },
         ),
         ListTile(
@@ -51,12 +42,8 @@ drawerGeral(contexto) {
             style: TextStyle(fontSize: 20),
           ),
           onTap: () {
-            Navigator.push(
-              contexto,
-              MaterialPageRoute(
-                builder: (context) => StarMusic(),
-              ),
-            );
+            Navigator.pushNamed(contexto, '/starmusic');
+            actualPage = Pages.starmusic;
           },
         ),
         ListTile(
@@ -65,12 +52,8 @@ drawerGeral(contexto) {
             style: TextStyle(fontSize: 20),
           ),
           onTap: () {
-            Navigator.push(
-              contexto,
-              MaterialPageRoute(
-                builder: (context) => Aboutme(),
-              ),
-            );
+            Navigator.pushNamed(contexto, '/aboutme');
+            actualPage = Pages.aboutme;
           },
         )
       ],
