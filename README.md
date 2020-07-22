@@ -1,6 +1,6 @@
 
 # Star place - Your place in the galaxy
->version 0.0.1
+>Currently on development - version 0.0.1
 
 **The perfect app for star wars fans**
  
